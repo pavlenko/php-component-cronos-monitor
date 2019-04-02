@@ -1,0 +1,41 @@
+{
+    "config": {
+        "sort-packages": true
+    },
+    "name": "pe/component-cronos-monitor",
+    "description": "Cronos monitor sub-component",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Pavlenko",
+            "email": "pavlenko.obs@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "pe/component-cronos-core": "^1.0"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^2.6",
+        "phpunit/phpunit": "~6.0"
+    },
+    "suggest": {
+        "doctrine/dbal": "For use database storage"
+    },
+    "autoload": {
+        "psr-4": {
+            "PE\\Component\\Cronos\\Monitor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PE\\Component\\Cronos\\Monitor\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
